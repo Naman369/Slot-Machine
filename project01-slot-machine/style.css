@@ -1,0 +1,97 @@
+
+.slot-machine{
+    background-color: darkred;
+    border: dotted goldenrod 5px;
+    height: 600px;
+    width: 1000px;
+    margin: 50px;
+    display: flex;
+    margin-left: 254px;
+    margin-top: 92px;
+}
+
+.slot{
+    background-color: khaki;
+    border: dotted darkred 5px;
+    height: 400px;
+    width: 250px;
+    margin: 35px;
+    font-size: 150px;
+    line-height: 350px;
+    text-align: center;
+
+    overflow: hidden;
+}
+.play{
+    background-color: gold;
+    border: dotted darkred 5px;
+    height: 120px;
+    width: 400px;
+    margin-left: -700px;
+    margin-top: 460px;
+    display: flex;   
+}
+
+.start{
+   
+    
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border: dotted green;
+    margin-left: 60px;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+} 
+
+.start:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+
+.slot .value{
+    animation-name: slotspin;
+    animation-iteration-count:  infinite;
+    animation-duration: 0.5s;
+
+}
+
+
+
+
+@keyframes slotspin{
+    0%{
+        transform: translateY(-300px);
+    }
+
+    100%{
+        transform: translateY(300px);
+    }
+      
+
+}
+
+@media(max-width:1494px){
+    .slot-machine{
+        width: 800px;
+    }
+    .slot{
+        width: 180px;
+    }
+
+
+}
+
+@media(max-width:977px){
+    .slot-machine{
+        width: 600px;
+    }
+    .slot{
+        width: 120px;
+    }
+
+
+}
